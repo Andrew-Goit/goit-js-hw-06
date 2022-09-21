@@ -8,12 +8,18 @@ const buttonDecrementRef = document.querySelector(
 
   let counterValue = 0;
 
-  buttonDecrementRef.addEventListener("click", () => {
-    counterValue -= 1;
-    counterRef.textContent = `${counterValue}`;
-  });
+  // buttonDecrementRef.addEventListener("click", () => {
+  //   counterValue -= 1;
+  //   counterRef.textContent = `${counterValue}`;
+  // });
+  // buttonIncrementRef.addEventListener("click", ()=> {
+  //   counterValue +=1;
+  //   counterRef.textContent = `${counterValue}`
+  // });
   
+  buttonDecrementRef.addEventListener("click", () => {
+    counterRef.textContent = `${counterValue -= 1}`;
+  });
   buttonIncrementRef.addEventListener("click", ()=> {
-    counterValue +=1;
-    counterRef.textContent = `${counterValue}`
+    counterRef.textContent = `${counterValue +=1}`
   });

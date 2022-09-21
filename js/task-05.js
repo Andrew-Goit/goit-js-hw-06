@@ -9,7 +9,8 @@ const outputRef = document.querySelector('#name-output');
 
 inputRef.addEventListener('input', onInput);
 function onInput (event) {
-    if (event.currentTarget.value === '') {
-    outputRef.textContent = 'Anonymous'};
+ if (event.currentTarget.value === '') {
+    outputRef.textContent = 'Anonymous'
+};
     outputRef.textContent = event.currentTarget.value;
-    };
+};
