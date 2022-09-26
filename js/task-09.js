@@ -9,8 +9,9 @@ function getRandomHexColor() {
 
 changeColorButton.addEventListener('click', onClick);
 function onClick (event) {
-  body.style.background = getRandomHexColor();
-  backgroundColor.textContent = getRandomHexColor();
+  const randomColor = getRandomHexColor();
+  body.style.background = randomColor;
+  backgroundColor.textContent = randomColor;
 }
 
 // changeColorButton.addEventListener('click',() => { 
